@@ -6,7 +6,8 @@ import {
   Phone, Mail, Globe, Menu, X, Sparkles, Rocket, PhoneCall, Camera,
   User, BookOpen,
 } from "lucide-react";
-import logoAsset from "@/assets/gramani-logo.png.asset.json";
+// Use the uploaded favicon as the site logo. Place your favicon at `public/favicon.ico`.
+const logoUrl = "/logo.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -65,7 +66,7 @@ function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <a href="#top" className="flex items-center gap-2">
-          <img src={logoAsset.url} alt="Gramani Vision" className="h-11 w-11 rounded-xl object-contain" />
+          <img src={logoUrl} alt="Gramani Vision" className="h-11 w-11 rounded-xl object-contain" />
           <span className="hidden text-lg font-extrabold tracking-tight text-primary sm:inline">
             Gramani <span className="text-gradient-brand">Vision</span>
           </span>
@@ -176,7 +177,7 @@ function Hero() {
         >
           <div className="absolute inset-0 rounded-3xl bg-gradient-brand opacity-30 blur-3xl" />
           <div className="relative rounded-3xl border border-white/15 bg-white/10 p-8 backdrop-blur-xl shadow-navy">
-            <img src={logoAsset.url} alt="Gramani Vision Logo" className="mx-auto h-48 w-48 rounded-2xl bg-white object-contain p-4" />
+            <img src={logoUrl} alt="Gramani Vision Logo" className="mx-auto h-48 w-48 rounded-2xl bg-white object-contain p-4" />
             <div className="mt-6 grid grid-cols-3 gap-3 text-center">
               {[
                 { n: "Ready\u00a0", l: "MADE\u00a0 KIT" },
