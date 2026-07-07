@@ -707,7 +707,7 @@ function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-3 lg:px-8">
         <div>
           <div className="flex items-center gap-3">
-            <img src={logoAsset.url} alt="Gramani Vision" className="h-12 w-12 rounded-xl bg-white object-contain p-1" />
+            <img src={logoUrl} alt="Gramani Vision" className="h-12 w-12 rounded-xl bg-white object-contain p-1" />
             <div>
               <div className="text-lg font-extrabold text-white">Gramani Vision</div>
               <div className="text-sm text-white/70">Your Business Growth Partner</div>
